@@ -97,26 +97,4 @@ Project/
 - `POST /delete/`: Delete data from Pinecone.
 - `POST /retrieve/`: Retrieve the top 5 most similar results based on a query.
 
-## Example Requests
-
-### Insert an Item
-
-```bash
-curl -X POST "http://127.0.0.1:8000/insert/" -H "Content-Type: application/json" -d '{"id": "1", "content": "Example content"}'
-
-### Update an Item
-
-```bash
-curl -X POST "http://127.0.0.1:8000/update/" -H "Content-Type: application/json" -d '{"id": "1", "content": "Updated content"}'
-
-### Delete an Item
-
-```bash
-curl -X POST "http://127.0.0.1:8000/delete/" -H "Content-Type: application/json" -d '"1"'
-
-### Retrieve Items
-
-```bash
-curl -X POST "http://127.0.0.1:8000/retrieve/" -H "Content-Type: application/json" -d '{"query": "Example query"}'
-
 
